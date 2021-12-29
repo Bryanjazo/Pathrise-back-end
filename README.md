@@ -1,24 +1,34 @@
-# README
+# Instructions 
+Please make sure to follow step by step. numbers of steps will be provided to help guide starup process. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Step 1
 
-Things you may want to cover:
+Please make sure your gemfile is up to date by inputting in your terminal
 
-* Ruby version
+#### `bundle install` 
 
-* System dependencies
+## Step 2
 
-* Configuration
+Next, make sure your database is migrated with the correct tables by inputting
 
-* Database creation
+#### `rails db:migrate`
 
-* Database initialization
+This will allow you to continue with the next steps.
 
-* How to run the test suite
+## Step 3 
 
-* Services (job queues, cache servers, search engines, etc.)
+Now feel free to seed your database to enable you to have all of the information needed for your front-end. This make take a while due to the large seeding structure going on from the CSV file. 
 
-* Deployment instructions
+### Please Input 
 
-* ...
+#### `rails db:seed` 
+
+## Final step
+
+Now feel free to start your server by typing 
+
+#### `rails s or rails server`
+
+This will start your server.
+
+
