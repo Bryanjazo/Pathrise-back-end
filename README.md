@@ -57,6 +57,8 @@ I used `rack-cors` to enable security between each request and set the config fi
 I used `CSV` to allow my application to parse through the csv file provided and extracts the data the way I need it to to make a `job_source`. this extracts the correct data for me.
  
 I used `pry` which allows me to debug errors by providing me with insight on params what each variable means and what’s going on.
+
+Used `Hirb` as well and allows me to see my tables in a more structured way in rails console.
  
 # CSV File.
  
