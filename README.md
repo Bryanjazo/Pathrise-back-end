@@ -100,3 +100,7 @@ To get updated job source csv file please navigate to `http://localhost:3001/api
     "SmartRecruiters" => 59,
     "Government Jobs" => 1
 }
+
+# How would you determine if a job application link is still active?
+
+You can do this by simply fetching or scraping the urls site and seeing if you get a 404 error.
