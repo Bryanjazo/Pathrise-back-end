@@ -1,6 +1,14 @@
 class Api::V1::JobSourcesController < ApplicationController
 
 
+  def index 
+    @api_v1_job_sources = Api::V1::JobSource.all
+
+
+    send_data @api_v1_job_sources.to_csv , filename: "Job-Source-#{Date.today}.csv"
+
+  end
+
   def show
     @api_v1_job_board = Api::V1::JobBoard.find(params[:id])
     

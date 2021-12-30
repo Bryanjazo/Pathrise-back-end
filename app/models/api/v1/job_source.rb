@@ -1,6 +1,26 @@
 class Api::V1::JobSource < ApplicationRecord
 
 
+    def self.to_csv
+    
+        
+        attributes = %w{id job_title company_name job_url job_source}
+
+        CSV.generate(headers: true) do |csv|
+            csv << attributes
+            
+            
+            all.each do |job|
+                
+    
+                
+              csv << attributes.map{ |attr| job.send(attr) }
+            end
+          end
+        end
+      
+  
+
     def self.get_job_sources 
     start1 = 0
     start2 = 0
