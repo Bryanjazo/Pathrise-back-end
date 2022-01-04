@@ -62,7 +62,7 @@ Used `Hirb` as well and allows me to see my tables in a more structured way in r
  
 # CSV File.
  
-To get updated job source csv file please navigate to `http://localhost:3001/api/v1/job_sources`
+To get updated job source csv file please navigate to `https://pathrise-assement-back-end.herokuapp.com/api/v1/job_sources`
  
  
 # Job Source Count representation.
